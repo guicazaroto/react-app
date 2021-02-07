@@ -1,0 +1,42 @@
+.App {
+  width: 80%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.avatar {
+  display: flex;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.avatar__img {
+  width: 20%;
+  height: 20%;
+  margin-right: 2rem;
+}
+
+.avatar__name {
+  margin: 0
+}
+
+.avatar__name a {
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+}
+
+.avatar__relations {
+  padding-left: 0rem;
+}
+.avatar__relations li {
+  list-style-type: none;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.actions__button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}

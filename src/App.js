@@ -1,33 +1,36 @@
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <img src="https://avatars.githubusercontent.com/u/9921030?v=4" alt="avatar" />
-      <h2>
-        <a href="https://api.github.com/users/guicazaroto">Guilherme Cazaroto</a>
-      </h2>
-      <div className="followers">
-        <h3>Relations</h3>
-        <ul>
-          <li>followers: 100</li>
-          <li>following: 3</li>
-        </ul>
+      <div className="avatar">
+        <img
+          className="avatar__img"
+          src="https://avatars.githubusercontent.com/u/9921030?v=4"
+          alt="avatar"
+        />
+        <div className="avatar__info">
+          <h2 className="avatar__name">
+            <a href="https://api.github.com/users/guicazaroto">Guilherme Cazaroto</a>
+          </h2>
+          <ul className="avatar__relations">
+            <li><strong>followers:</strong> 100</li>
+            <li><strong>following:</strong> 3</li>
+          </ul>
+        </div>
       </div>
 
-      <div className="followers">
-        <h3>Relations</h3>
-        <ul>
-          <li>followers: 100</li>
-          <li>following: 3</li>
-        </ul>
+      <div className="actions">
+        <button className="actions__button">Ver repositórios</button>
+        <button className="actions__button">Ver favoritos</button>
       </div>
 
       <div className="repositories">
-        <h3>Repositories</h3>
+        <h3>Repositórios</h3>
       </div>
 
       <div className="starred">
-        <h3>Starred</h3>
+        <h3>Favoritos</h3>
       </div>
     </div>
   );
